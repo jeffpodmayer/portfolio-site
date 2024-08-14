@@ -19,7 +19,7 @@
     "imageSrc": "projects/portfolio.png",
     "description": "My personal portfolio built with React explaing my background and personal experience. It showcases my top projects. Visiy my GitHub for more!",
     "skills": ["React", "JavaScript", "JSON", "Deployment"],
-    "demo": "https://hikerhunger-production.up.railway.app/",
-    "source": "https://github.com/jeffpodmayer/hikerhunger"
+    "demo": "https://main--jeffpodmayer.netlify.app/",
+    "source": "https://github.com/jeffpodmayer/portfolio-site"
   }
 ]
