@@ -12,6 +12,14 @@
       "Shoelace"
     ],
     "demo": "https://hikerhunger-production.up.railway.app/",
-    "source": "https://www.github.com"
+    "source": "https://github.com/jeffpodmayer/hikerhunger"
+  },
+  {
+    "title": "My Portfolio",
+    "imageSrc": "projects/portfolio.png",
+    "description": "My personal portfolio built explaing my background and personal experience",
+    "skills": ["React", "JavaScript", "JSON", "Deployment"],
+    "demo": "https://hikerhunger-production.up.railway.app/",
+    "source": "https://github.com/jeffpodmayer/hikerhunger"
   }
 ]

@@ -23,15 +23,6 @@ export const About = () => {
               </p>
             </div>
           </li>
-          {/* <li className={styles.aboutItem}>
-            { <img src={getImageUrl("about/serverIcon.png")} alt="server Icon" />}
-            <div className={styles.aboutItemText}>
-              <h3>Backend Developer</h3>
-              <p>
-                I am a front edn developer using lots of tech that is techy.
-              </p>
-            </div>
-          </li> */}
           <li className={styles.aboutItem}>
             {/* <img src={getImageUrl("about/uiIcon.png")} alt="Ui Icon" /> */}
             <div className={styles.aboutItemText}>
@@ -40,6 +31,22 @@ export const About = () => {
                 Experience managing a team of 4 people and 15 staff in a remote
                 setting. I was the main point of a accountability for the
                 programs successes and failures.
+              </p>
+            </div>
+          </li>
+          <li className={styles.aboutItem}>
+            {/* {
+              <img
+                src={getImageUrl("about/serverIcon.png")}
+                alt="server Icon"
+              />
+            } */}
+            <div className={styles.aboutItemText}>
+              <h3>Previous Outdoor Educator</h3>
+              <p>
+                In my past career I took youth on 14-22 day backpacking and rock
+                climbing expeditions with a major focus on personal challenge
+                and self discovery through socio-emotional learning.
               </p>
             </div>
           </li>
