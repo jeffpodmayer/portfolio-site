@@ -18,6 +18,7 @@
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .content {
@@ -29,6 +30,7 @@
 .aboutImage {
   width: 35%;
   border-radius: 50px;
+  margin-right: 35px;
 }
 
 .aboutItems {
@@ -59,12 +61,12 @@
   background-size: 100% 100%;
 }
 
-.aboutItem h3 {
-  font-size: 25px;
-  font-weight: 600;
+.aboutItemText h3 {
+  font-size: 35px;
+  font-weight: bold;
 }
 
-.aboutItem p {
+.aboutItemText p {
   font-size: 25px;
 }
 

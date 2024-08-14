@@ -1,29 +1,28 @@
 [
   {
-    "role": "Software Engineer",
-    "organisation": "Google",
-    "startDate": "Sept, 2022",
+    "role": "Student",
+    "organisation": "Coders Campus",
+    "startDate": "Nov, 2024",
     "endDate": "Present",
-    "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
-    "imageSrc": "history/google.png"
-  },
-  {
-    "role": "UI Designer",
-    "organisation": "Mirosoft",
-    "startDate": "Aug, 2021",
-    "endDate": "Aug, 2022",
-    "experiences": ["Worked on Windows 11", "Designed the control panel"],
-    "imageSrc": "history/microsoft.png"
-  },
-  {
-    "role": "SWE Intern",
-    "organisation": "Netflix",
-    "startDate": "Apr, 2020",
-    "endDate": "Jun, 2020",
     "experiences": [
-      "Worked on component library",
-      "Helped create UI components"
+      "Learned to code through 9 months of rigorous full time course work",
+      "Mentored fellow students through pair programming at 4 meetings per week",
+      "Contributed to programs open source application through ticket completion, code reviews and mob programming sessions",
+      "Used Git/GitHub for version control of production, dev and other feature branches",
+      "Collaborated in a feedback-oriented environment for professional development and program improvement throughout a 7 month programming season serving over 200 participants"
     ],
-    "imageSrc": "history/netflix.png"
+    "imageSrc": "history/codersCampusIcon.png"
+  },
+  {
+    "role": "Instructor & Program Director",
+    "organisation": "Outward Bound California",
+    "startDate": "May, 2014",
+    "endDate": "Mar, 2022",
+    "experiences": [
+      "Instructed and created curriculum for 1-4 week-long rock climbing and backpacking expeditions for ages 12 to adult with a focus on socio-emotional learning including self-awareness, self regulation, social responsibility and perseverance",
+      "Led a high-performing, cross-functional team, composed of four direct reports and twenty field staff members with areas of expertise ranging from program management to logistics to instruction",
+      "Collaborated in a feedback-oriented environment for professional development and program improvement throughout a 7 month programming season serving over 200 participants"
+    ],
+    "imageSrc": "history/obca.png"
   }
 ]

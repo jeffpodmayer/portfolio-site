@@ -10,7 +10,7 @@ export const Hero = () => {
         <h1 className={styles.title}>Hey, I'm Jeff</h1>
         <p className={styles.description}>
           I’m a full-stack developer with experience in Java, JavaScript, React,
-          MySQL and Spring.
+          Spring, Hibernate and MySQL databases.
         </p>
         <a href="mailto:jeff.podmayer@gmail.com" className={styles.contactBtn}>
           {" "}

@@ -1,5 +1,25 @@
 [
   {
+    "title": "Java",
+    "imageSrc": "skills/java.png"
+  },
+  {
+    "title": "MySQL",
+    "imageSrc": "skills/MySQL.png"
+  },
+  {
+    "title": "JavaScript",
+    "imageSrc": "skills/jslogo.png"
+  },
+  {
+    "title": "Spring",
+    "imageSrc": "skills/spring.png"
+  },
+  {
+    "title": "Hibernate",
+    "imageSrc": "skills/hibernate.png"
+  },
+  {
     "title": "HTML",
     "imageSrc": "skills/html.png"
   },
@@ -10,21 +30,5 @@
   {
     "title": "React",
     "imageSrc": "skills/react.png"
-  },
-  {
-    "title": "Node",
-    "imageSrc": "skills/node.png"
-  },
-  {
-    "title": "GraphQL",
-    "imageSrc": "skills/graphql.png"
-  },
-  {
-    "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
-  },
-  {
-    "title": "Figma",
-    "imageSrc": "skills/figma.png"
   }
 ]

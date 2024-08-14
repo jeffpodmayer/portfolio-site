@@ -17,16 +17,17 @@
 
 .content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 14px;
 }
 
 .skills {
-  width: 45%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 37px;
+  margin-bottom: 25px;
 }
 
 .skill {
@@ -57,7 +58,7 @@
 }
 
 .history {
-  width: 45%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -75,7 +76,7 @@
 }
 
 .historyItem img {
-  width: 50px;
+  width: 75px;
 }
 
 .historyItemDetails {

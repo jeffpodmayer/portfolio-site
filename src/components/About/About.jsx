@@ -14,30 +14,32 @@ export const About = () => {
         />
         <ul className={styles.aboutItems}>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor Icon" />
+            {/* <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor Icon" /> */}
             <div className={styles.aboutItemText}>
-              <h3>Frontend Developer</h3>
+              <h3>Full Stack Developer</h3>
               <p>
-                I am a front edn developer using lots of tech that is techy.
+                I have been building full stack web applications for the last
+                year using Java, JavaScript, React, Spring, Hibernate and MySQL.
               </p>
             </div>
           </li>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/serverIcon.png")} alt="server Icon" />
+          {/* <li className={styles.aboutItem}>
+            { <img src={getImageUrl("about/serverIcon.png")} alt="server Icon" />}
             <div className={styles.aboutItemText}>
               <h3>Backend Developer</h3>
               <p>
                 I am a front edn developer using lots of tech that is techy.
               </p>
             </div>
-          </li>
+          </li> */}
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/uiIcon.png")} alt="Ui Icon" />
+            {/* <img src={getImageUrl("about/uiIcon.png")} alt="Ui Icon" /> */}
             <div className={styles.aboutItemText}>
-              <h3>Product Manager</h3>
+              <h3>Program Director</h3>
               <p>
-                I've run a cross function team with developers based
-                internatioanlly.
+                Experience managing a team of 4 people and 15 staff in a remote
+                setting. I was the main point of a accountability for the
+                programs successes and failures.
               </p>
             </div>
           </li>

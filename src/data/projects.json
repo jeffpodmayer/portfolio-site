@@ -1,26 +1,17 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  },
-  {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  },
-  {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
+    "title": "hikerhunger",
+    "imageSrc": "projects/hikerhunger.png",
+    "description": "Full stack web application allowing users to create backpacking recipes and then plan trips with those created recipes.",
+    "skills": [
+      "Java",
+      "JavaScript",
+      "Spring",
+      "Hibernate",
+      "MySQL",
+      "Shoelace"
+    ],
+    "demo": "https://hikerhunger-production.up.railway.app/",
     "source": "https://www.github.com"
   }
 ]
