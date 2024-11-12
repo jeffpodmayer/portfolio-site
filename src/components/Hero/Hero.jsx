@@ -12,18 +12,12 @@ export const Hero = () => {
           I’m a full-stack developer with experience in Java, JavaScript, React,
           Spring, Hibernate and MySQL databases.
         </p>
-        <a href="mailto:jeff.podmayer@gmail.com" className={styles.contactBtn}>
-          {" "}
-          Contact Me
-        </a>
       </div>
       <img
         src={getImageUrl("hero/heroImage.png")}
         alt="hero"
         className={styles.heroImg}
       />
-      <div className={styles.topBlur} />
-      <div className={styles.bottomBlur} />
     </section>
   );
 };

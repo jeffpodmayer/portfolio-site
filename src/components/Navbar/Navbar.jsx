@@ -7,9 +7,7 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
-        Jeff Podmayer
-      </a>
+      <a className={styles.title} href="/"></a>
       <div className={styles.menu}>
         <img
           className={styles.menuBtn}
@@ -35,7 +33,13 @@ export const Navbar = () => {
             <a href="#experience">Experience</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a
+              href="mailto:jeff.podmayer@gmail.com"
+              className={styles.contactBtn}
+            >
+              {" "}
+              Contact Me
+            </a>
           </li>
         </ul>
       </div>
