@@ -1,9 +1,10 @@
 @import "../../vars.css";
 
 .navbar {
-  position: relative;
   display: flex;
+  position: relative;
   justify-content: space-between;
+  align-items: center;
   padding-top: 61px;
   z-index: 2;
   margin: 0 10%;
@@ -18,16 +19,16 @@
 
 .menu {
   display: flex;
-  flex-direction: column; /* Stack menu items vertically */
-  align-items: flex-start; /* Align items to the left */
-  position: relative;
-  gap: 20px; /* Adjust spacing between items */
+  justify-content: flex-start; /* Align to the left */
+  align-items: center; /* Align vertically */
+  gap: 20px; /* Space between menu items */
 }
 
 .menuItems {
   display: flex;
   gap: 47px;
   list-style: none;
+  justify-content: flex-start; /* Align items to the left */
 }
 
 .menuItems a {
@@ -49,7 +50,7 @@
   font-size: 20px;
   font-weight: 600;
   padding: 15px 25px;
-  margin-left: 200px;
+  margin-left: auto;
   box-shadow: 0 0 4px 0 regba(0, 0, 0, 0.25);
   background: linear-gradient(200deg, #ff7eb3, #57cff0, #9b51e0);
 }

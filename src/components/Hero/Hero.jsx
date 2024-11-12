@@ -13,11 +13,11 @@ export const Hero = () => {
           Spring, Hibernate and MySQL databases.
         </p>
       </div>
-      <img
+      {/* <img
         src={getImageUrl("hero/heroImage.png")}
         alt="hero"
         className={styles.heroImg}
-      />
+      /> */}
     </section>
   );
 };

@@ -32,17 +32,12 @@ export const Navbar = () => {
           <li>
             <a href="#experience">Experience</a>
           </li>
-          <li>
-            <a
-              href="mailto:jeff.podmayer@gmail.com"
-              className={styles.contactBtn}
-            >
-              {" "}
-              Contact Me
-            </a>
-          </li>
         </ul>
       </div>
+      <a href="mailto:jeff.podmayer@gmail.com" className={styles.contactBtn}>
+        {" "}
+        Contact Me
+      </a>
     </nav>
   );
 };
