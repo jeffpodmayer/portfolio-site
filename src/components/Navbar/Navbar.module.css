@@ -10,7 +10,7 @@
   z-index: 100;
   margin: 0 10%;
   border-bottom: white dashed 2px;
-  background-color: var(--color-bg);
+  background-color: var(--color-bg, 0.5);
 }
 
 .title {
