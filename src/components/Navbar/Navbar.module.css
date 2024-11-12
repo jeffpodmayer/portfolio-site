@@ -2,12 +2,15 @@
 
 .navbar {
   display: flex;
-  position: relative;
+  position: sticky;
+  top: 0;
   justify-content: space-between;
   align-items: center;
-  padding-top: 61px;
-  z-index: 2;
+  padding-top: 40px;
+  z-index: 100;
   margin: 0 10%;
+  border-bottom: white dashed 2px;
+  background-color: var(--color-bg, 0.5);
 }
 
 .title {
@@ -35,6 +38,21 @@
   font-size: 25px;
   color: var(--color-text);
   text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.menuItems a:hover {
+  background: linear-gradient(
+    90deg,
+    #ff7eb3,
+    /* pink */ #57cff0,
+    /* blue */ #9b51e0 /* purple */
+  );
+  background-size: 200%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.5s ease;
 }
 
 .menuBtn {
@@ -50,6 +68,7 @@
   font-size: 20px;
   font-weight: 600;
   padding: 15px 25px;
+  margin-bottom: 15px;
   margin-left: auto;
   box-shadow: 0 0 4px 0 regba(0, 0, 0, 0.25);
   background: linear-gradient(200deg, #ff7eb3, #57cff0, #9b51e0);
