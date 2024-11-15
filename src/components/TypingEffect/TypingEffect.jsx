@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "./TypingEffect.module.css"; // Your CSS file
 
 const TypingEffect = () => {
@@ -17,6 +17,20 @@ const TypingEffect = () => {
   const typingSpeed = 150; // Speed of typing
   const deletingSpeed = 100; // Speed of deleting
   const pauseTime = 1000; // Time to wait before typing next phrase
+  const [wordPosition, setWordPosition] = useState({ left: "0px", top: "0px" });
+
+  const containerRef = useRef(null);
+
+  // Function to generate random positions within the container
+  const getRandomPosition = (containerWidth, containerHeight) => {
+    const randomX = Math.random() * containerWidth;
+    const randomY = Math.random() * containerHeight;
+
+    return {
+      left: `${randomX}px`,
+      top: `${randomY}px`,
+    };
+  };
 
   function getRandomColor() {
     const colors = ["#ff7eb3", "#57cff0", "#9b51e0", "#ff9e3f", "#d74b47"];
@@ -25,6 +39,12 @@ const TypingEffect = () => {
   }
 
   useEffect(() => {
+    // const container = containerRef.current;
+    // if (!container) return; // Ensure the container exists before proceeding
+
+    // const containerWidth = container.offsetWidth;
+    // const containerHeight = container.offsetHeight;
+
     let timer;
 
     if (!isDeleting && currentPhrase === "") {
@@ -41,6 +61,7 @@ const TypingEffect = () => {
         // After deletion, move to the next phrase
         setIndex((prevIndex) => (prevIndex + 1) % phrases.length); // Loop through phrases
         setIsDeleting(false); // Start typing again
+        // setWordPosition(getRandomPosition(containerWidth, containerHeight)); // Set random position within container
       }
     } else {
       // Typing the current phrase
@@ -64,7 +85,10 @@ const TypingEffect = () => {
       <span
         className={styles.typingText}
         style={{
-          color: color, // Apply the random color here
+          color: color,
+          // position: "absolute", // Position the text absolutely within the container
+          // left: wordPosition.left,
+          // top: wordPosition.top, // Apply the random color here
         }}
       >
         {currentPhrase}
