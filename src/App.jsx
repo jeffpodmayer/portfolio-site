@@ -11,10 +11,10 @@ function App() {
     <div className={styles.App}>
       <Navbar />
       <Hero />
-      <About />
+      {/* <About /> */}
       <Projects />
       <Experience />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 }

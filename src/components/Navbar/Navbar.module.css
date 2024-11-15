@@ -8,9 +8,9 @@
   align-items: center;
   padding-top: 40px;
   z-index: 100;
-  margin: 0 10%;
+  margin: 0 8%;
   border-bottom: white dashed 2px;
-  background-color: var(--color-bg, 0.5);
+  background-color: var(--color-bg);
 }
 
 .title {
@@ -25,13 +25,15 @@
   justify-content: flex-start; /* Align to the left */
   align-items: center; /* Align vertically */
   gap: 20px; /* Space between menu items */
+  margin-left: 0;
 }
 
 .menuItems {
   display: flex;
   gap: 47px;
   list-style: none;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .menuItems a {
@@ -39,6 +41,7 @@
   color: var(--color-text);
   text-decoration: none;
   margin-bottom: 15px;
+  transition: color 0.3s ease, background-position 0.5s ease;
 }
 
 .menuItems a:hover {
@@ -72,6 +75,27 @@
   margin-left: auto;
   box-shadow: 0 0 4px 0 regba(0, 0, 0, 0.25);
   background: linear-gradient(200deg, #ff7eb3, #57cff0, #9b51e0);
+}
+
+.logosAndButton {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 15px; /* Space between logos and the button */
+  margin-left: 450px;
+}
+
+img {
+  margin-bottom: 7px;
+}
+
+.githubLogo img {
+  width: 30px; /* Adjust logo size */
+  height: 30px; /* Ensure logos are square */
+}
+
+.linkedInLogo img {
+  width: 42px; /* Adjust logo size */
+  height: 42px; /* Ensure logos are square */
 }
 
 @media screen and (max-width: 830px) {

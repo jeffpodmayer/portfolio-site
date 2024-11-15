@@ -34,10 +34,31 @@ export const Navbar = () => {
           </li>
         </ul>
       </div>
-      <a href="mailto:jeff.podmayer@gmail.com" className={styles.contactBtn}>
-        {" "}
-        Contact Me
-      </a>
+      <div className={styles.logosAndButton}>
+        <a
+          href="https://github.com/jeffpodmayer"
+          target="_blank"
+          className={styles.githubLogo}
+        >
+          <img src="/assets/nav/githubLogo.png" alt="Git Hub Logo" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jeffpodmayer/"
+          className={styles.linkedInLogo}
+          alt="LinkedIn Logo"
+          target="_blank"
+        >
+          <img src="/assets/nav/linkedInLogo.png" />
+        </a>
+        <a
+          href="mailto:jeff.podmayer@gmail.com"
+          className={styles.contactBtn}
+          target="_blanl"
+        >
+          {" "}
+          Contact Me
+        </a>
+      </div>
     </nav>
   );
 };
