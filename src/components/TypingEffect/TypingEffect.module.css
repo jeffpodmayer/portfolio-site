@@ -1,0 +1,16 @@
+.description {
+  /* color: var(--color-text); */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.typingText {
+  display: inline-block;
+  border-right: 3px solid var(--color-text); /* Cursor effect */
+  animation: blink 0.75s step-end infinite; /* Blinking cursor */
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent; /* Blink cursor by hiding it */
+  }
+}
