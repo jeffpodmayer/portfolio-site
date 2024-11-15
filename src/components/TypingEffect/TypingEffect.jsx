@@ -9,6 +9,9 @@ const TypingEffect = () => {
     "Spring",
     "Hibernate",
     "MySQL",
+    "Leadership",
+    "Teamwork",
+    "Communication",
   ]; // List of programming languages
   const [currentPhrase, setCurrentPhrase] = useState(""); // Current phrase being typed
   const [index, setIndex] = useState(0); // Index for phrases
