@@ -10,7 +10,9 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hey, I'm Jeff</h1>
         <p className={styles.description}>
-          I have experience in... <TypingEffect />
+          <span className={styles.typingEffect}>
+            <TypingEffect />
+          </span>
         </p>
       </div>
       <img

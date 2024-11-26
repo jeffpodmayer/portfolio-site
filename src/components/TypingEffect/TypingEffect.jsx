@@ -20,7 +20,7 @@ const TypingEffect = () => {
   const typingSpeed = 150; // Speed of typing
   const deletingSpeed = 100; // Speed of deleting
   const pauseTime = 1000; // Time to wait before typing next phrase
-  const [wordPosition, setWordPosition] = useState({ left: "0px", top: "0px" });
+  const [words, setWords] = useState([]);
 
   const containerRef = useRef(null);
 
@@ -42,11 +42,11 @@ const TypingEffect = () => {
   }
 
   useEffect(() => {
-    // const container = containerRef.current;
-    // if (!container) return; // Ensure the container exists before proceeding
+    const container = containerRef.current;
+    if (!container) return; // Ensure the container exists before proceeding
 
-    // const containerWidth = container.offsetWidth;
-    // const containerHeight = container.offsetHeight;
+    const containerWidth = container.offsetWidth;
+    const containerHeight = container.offsetHeight;
 
     let timer;
 
@@ -73,6 +73,15 @@ const TypingEffect = () => {
           setCurrentPhrase(phrases[index].slice(0, currentPhrase.length + 1)); // Add next character
         }, typingSpeed);
       } else {
+        // Once typing is done, store the word and its position
+        setWords((prevWords) => [
+          ...prevWords,
+          {
+            text: phrases[index],
+            position: getRandomPosition(containerWidth, containerHeight),
+            color: getRandomColor(),
+          },
+        ]);
         // Wait before deleting the phrase
         setTimeout(() => {
           setIsDeleting(true); // Start deleting after full phrase is typed
@@ -84,19 +93,25 @@ const TypingEffect = () => {
   }, [currentPhrase, isDeleting, index]);
 
   return (
-    <p className={styles.description}>
-      <span
-        className={styles.typingText}
-        style={{
-          color: color,
-          // position: "absolute", // Position the text absolutely within the container
-          // left: wordPosition.left,
-          // top: wordPosition.top, // Apply the random color here
-        }}
-      >
-        {currentPhrase}
-      </span>
-    </p>
+    <div ref={containerRef} className={styles.content}>
+      <p className={styles.description}>
+        I have experience in...
+        {words.map((word, i) => (
+          <span
+            key={i}
+            className={styles.typingText}
+            style={{
+              color: word.color,
+              position: "absolute", // Position the word absolutely within the container
+              left: word.position.left,
+              top: word.position.top, // Apply random position for each word
+            }}
+          >
+            {word.text}
+          </span>
+        ))}
+      </p>
+    </div>
   );
 };
 
