@@ -33,9 +33,11 @@
   margin-bottom: 52px;
 }
 
-.typingEffect {
-  display: block; /* Ensures it appears on a new line */
-  margin-top: 10px; /* Adjust spacing as needed */
+.typingEffectWrapper {
+  position: relative; /* Keeps it within the flow of the content */
+  font-size: 45px; /* Adjust font size if needed */
+  margin-top: -20px; /* Optional: Adjust spacing if needed */
+  /* color: var(--color-text); */
 }
 
 .heroImg {
