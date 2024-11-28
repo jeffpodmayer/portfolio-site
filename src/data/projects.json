@@ -13,5 +13,13 @@
     ],
     "demo": "https://hikerhunger-production.up.railway.app/",
     "source": "https://github.com/jeffpodmayer/hikerhunger"
+  },
+  {
+    "title": "Skull King Scorekeeper",
+    "imageSrc": "",
+    "description": "React single page application to help players of the Skull King card game keep score.Deployed on AWS with Route53, S3 and CloudFront",
+    "skills": ["React", "TypeScript", "Vite"],
+    "demo": "",
+    "source": "https://github.com/jeffpodmayer/skull-king-scoreboard"
   }
 ]
