@@ -22,7 +22,7 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hey, I'm Jeff</h1>
         <p className={styles.description}>I have experience in...</p>
-        <div className={styles.TypingEffectWrapper}>
+        <div className={styles.typingEffect}>
           <TypingEffect phrases={phrases} />
         </div>
       </div>
