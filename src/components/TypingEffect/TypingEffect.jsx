@@ -6,21 +6,9 @@ const TypingEffect = ({ phrases }) => {
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [words, setWords] = useState([]);
-  const typingSpeed = 150;
+  const typingSpeed = 120;
   const deletingSpeed = 100;
   const pauseTime = 1000;
-
-  const containerRef = useRef(null);
-
-  const getRandomPosition = (containerWidth, containerHeight) => {
-    const randomX = Math.random() * containerWidth;
-    const randomY = Math.random() * containerHeight;
-
-    return {
-      left: `${randomX}px`,
-      top: `${randomY}px`,
-    };
-  };
 
   const getRandomColor = () => {
     const colors = ["#ff7eb3", "#57cff0", "#9b51e0", "#ff9e3f", "#d74b47"];
@@ -28,12 +16,6 @@ const TypingEffect = ({ phrases }) => {
   };
 
   useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
-
-    const containerWidth = container.offsetWidth;
-    const containerHeight = container.offsetHeight;
-
     let timer;
 
     if (isDeleting) {
@@ -42,8 +24,8 @@ const TypingEffect = ({ phrases }) => {
           setCurrentPhrase(currentPhrase.slice(0, -1));
         }, deletingSpeed);
       } else {
-        setIndex((prevIndex) => (prevIndex + 1) % phrases.length);
         setIsDeleting(false);
+        setIndex((prevIndex) => (prevIndex + 1) % phrases.length);
       }
     } else {
       if (currentPhrase.length < phrases[index].length) {
@@ -55,7 +37,6 @@ const TypingEffect = ({ phrases }) => {
           ...prevWords,
           {
             text: phrases[index],
-            position: getRandomPosition(containerWidth, containerHeight),
             color: getRandomColor(),
           },
         ]);

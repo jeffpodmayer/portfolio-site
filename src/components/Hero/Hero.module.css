@@ -30,14 +30,14 @@
   position: relative;
   font-size: 30px;
   font-family: var(--font-roboto);
-  margin-bottom: 52px;
+  margin-bottom: 25px;
 }
 
-.typingEffectWrapper {
-  position: relative; /* Keeps it within the flow of the content */
-  font-size: 45px; /* Adjust font size if needed */
-  margin-top: -20px; /* Optional: Adjust spacing if needed */
-  /* color: var(--color-text); */
+.typingEffect {
+  position: relative;
+  font-size: 32px;
+  margin-top: -20px;
+  color: var(--color-text);
 }
 
 .heroImg {
