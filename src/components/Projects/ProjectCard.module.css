@@ -11,6 +11,10 @@
   min-height: 400px;
 }
 
+.container:hover {
+  opacity: 0.5;
+}
+
 .image {
   margin-bottom: 25px;
   width: 100%;
