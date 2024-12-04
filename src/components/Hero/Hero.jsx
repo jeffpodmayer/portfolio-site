@@ -12,9 +12,8 @@ export const Hero = () => {
     "Spring",
     "Hibernate",
     "MySQL",
-    "Leadership",
-    "Teamwork",
-    "Communication",
+    "AWS",
+    "TypeScript",
   ];
 
   return (
