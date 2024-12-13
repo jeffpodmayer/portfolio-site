@@ -40,7 +40,11 @@ export const Navbar = () => {
           target="_blank"
           className={styles.githubLogo}
         >
-          <img src="/assets/nav/githubLogo.png" alt="Git Hub Logo" />
+          <img
+            className={styles.logo}
+            src="/assets/nav/githubLogo.png"
+            alt="Git Hub Logo"
+          />
         </a>
         <a
           href="https://www.linkedin.com/in/jeffpodmayer/"
@@ -48,7 +52,7 @@ export const Navbar = () => {
           alt="LinkedIn Logo"
           target="_blank"
         >
-          <img src="/assets/nav/linkedInLogo.png" />
+          <img className={styles.logo} src="/assets/nav/linkedInLogo.png" />
         </a>
         <a
           href="mailto:jeff.podmayer@gmail.com"
