@@ -2,12 +2,16 @@
 
 .container {
   margin-top: 76px;
+  display: flex;
+  flex-direction: row;
   color: var(--color-text);
   margin-left: 10%;
   margin-right: 10%;
+  border: solid red 2px;
 }
 
 .title {
+  position: absolute;
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.75px;

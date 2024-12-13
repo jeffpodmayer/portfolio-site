@@ -1,11 +1,15 @@
 @import "../../vars.css";
 
 .container {
+  margin-top: 15px;
+  width: 40%;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
   border-radius: 10px;
   overflow: hidden;
+  border: blue solid 2px;
 }
 
 .container:hover .image {
@@ -18,9 +22,7 @@
 }
 
 .image {
-  margin-bottom: 25px;
-  width: 45%;
-  object-fit: cover;
+  width: 100%;
   transition: opacity 0.3s ease;
   border-radius: 10px;
 }
@@ -52,6 +54,7 @@
 
 .skills {
   display: flex;
+  flex-direction: column;
   margin-top: 15px;
   margin-bottom: 20px;
 }
