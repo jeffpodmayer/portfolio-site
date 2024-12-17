@@ -5,7 +5,7 @@
   width: 40%;
   position: relative;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
   border: white solid 2px;
@@ -35,8 +35,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /* display: flex; */
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: last baseline;
   align-items: center;
   opacity: 0; /* Initially hidden */
   transition: opacity 0.3s ease;
@@ -49,27 +50,22 @@
 }
 
 .description {
-  margin-top: 6px;
-  font-size: 25px;
-  font-weight: 400;
-  font-size: 20px;
+  margin: 0px 20px 0px 20px;
+  font-size: 18px;
 }
 
 .skills {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  margin-left: 15px;
+  margin: 60px 20px 20px 20px;
   list-style: none;
 }
 
 .skill {
-  /* border: white 1px dashed; */
   border-radius: 50px;
-  padding: 7px;
+  padding: 5px 8px 5px 8px;
   margin: 5px 5px;
   text-align: center;
   background-color: lightgray;
@@ -79,21 +75,30 @@
 
 .links {
   display: flex;
-  justify-content: end;
-  margin-top: 150px;
-  margin-right: 25px;
+  justify-content: center;
+  margin-bottom: 25px;
+  margin-top: auto;
 }
 
 .link {
-  margin: 5px;
-  background-color: blanchedalmond;
-  color: black;
+  display: block;
+  margin: 10px;
+  background: linear-gradient(200deg, #ff7eb3, #57cff0, #9b51e0);
+  background-size: 200%;
+  background-position: 100% 0;
+  transition: background-position 0.5s ease;
+  color: white;
   text-decoration: none;
   border-radius: 50px;
   padding: 7px;
+  width: 125px;
+  text-align: center;
 }
 
 .link:hover {
-  background-color: orangered;
-  transition: opacity 0.3s ease;
+  background-position: 0 0; /* Move the background gradient to the left */
+  transform: scale(1.1); /* Slightly enlarge the button */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transition: background-position 0.5s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }

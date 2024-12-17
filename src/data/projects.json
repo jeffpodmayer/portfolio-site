@@ -2,7 +2,7 @@
   {
     "title": "hikerhunger",
     "imageSrc": "projects/hikerhunger.png",
-    "description": "Full stack web application allowing users to create backpacking recipes and then plan trips with those created recipes.",
+    "description": "Create backpacking recipes and plan hiking trips.",
     "skills": [
       "Java",
       "JavaScript",
@@ -17,8 +17,16 @@
   {
     "title": "Skull King Scorekeeper",
     "imageSrc": "projects/skscorekeeper.png",
-    "description": "React single page application to help players of the Skull King card game keep score.Deployed on AWS with Route53, S3 and CloudFront",
-    "skills": ["React", "TypeScript", "Vite", "AWS"],
+    "description": "Single-page application for scoring the Skull King card game.",
+    "skills": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "AWS",
+      "S3",
+      "CloudFront",
+      "Route53"
+    ],
     "demo": "https://skscorekeeper.jeffpodmayer.com/",
     "source": "https://github.com/jeffpodmayer/skull-king-scoreboard"
   }
