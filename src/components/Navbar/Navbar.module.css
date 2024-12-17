@@ -41,20 +41,13 @@
   color: var(--color-text);
   text-decoration: none;
   margin-bottom: 15px;
-  transition: color 0.3s ease, background-position 0.5s ease;
+  transition: color 0.3s ease;
 }
 
 .menuItems a:hover {
-  background: linear-gradient(
-    90deg,
-    #ff7eb3,
-    /* pink */ #57cff0,
-    /* blue */ #9b51e0 /* purple */
-  );
-  background-size: 200%;
-  background-position: 100% 0;
-  -webkit-text-fill-color: transparent;
-  transition: background-position 0.5s ease;
+  color: transparent; /* Makes the text transparent */
+  background-image: linear-gradient(90deg, #ff7eb3, #57cff0, #9b51e0);
+  background-clip: text; /* Applies the background gradient to the text only */
 }
 
 .menuBtn {
