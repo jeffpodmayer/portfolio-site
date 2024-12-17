@@ -1,4 +1,5 @@
 import React from "react";
+import Timeline from "../Timeline/Timeline.jsx";
 import skills from "../../data/skills.json";
 import history from "../../data/history.json";
 import styles from "./Experience.module.css";
@@ -9,7 +10,8 @@ export const Experience = () => {
     <section className={styles.container} id="experience">
       <h2 className={styles.title}>Experience</h2>
       <div className={styles.content}>
-        <div className={styles.skills}>
+        <Timeline />
+        {/* <div className={styles.skills}>
           {skills.map((skill, id) => {
             return (
               <div key={id} className={styles.skill}>
@@ -20,8 +22,8 @@ export const Experience = () => {
               </div>
             );
           })}
-        </div>
-        <ul className={styles.history}>
+        </div> */}
+        {/* <ul className={styles.history}>
           {history.map((historyItem, id) => {
             return (
               <li key={id} className={styles.historyItem}>
@@ -41,7 +43,7 @@ export const Experience = () => {
               </li>
             );
           })}
-        </ul>
+        </ul> */}
       </div>
     </section>
   );
