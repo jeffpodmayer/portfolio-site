@@ -5,26 +5,32 @@ import styles from "./Contact.module.css";
 export const Contact = () => {
   return (
     <footer id="contact" className={styles.container}>
-      <div className={styles.text}>
-        <h2>Contact</h2>
-        <p>Feel free to reach out!</p>
-      </div>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <img src={getImageUrl("contact/emailIcon.png")} alt="email icon" />
-          <a href="mailto:jeff.podmayer@gmail.com">jeff.podmayer@gmail.com</a>
+          <a
+            className={styles.mailToLogo}
+            href="mailto:jeff.podmayer@gmail.com"
+          >
+            <img src={getImageUrl("contact/emailIcon.png")} alt="email icon" />
+          </a>
         </li>
         <li className={styles.link}>
-          <img src={getImageUrl("contact/githubIcon.png")} alt="GitHub icon" />
-          <a href="https://github.com/jeffpodmayer">github.com/jeffpodmayer</a>
+          <a
+            className={styles.githubLogo}
+            href="https://github.com/jeffpodmayer"
+          >
+            <img src="../../../assets/nav/githubLogo.png" alt="GitHub icon" />
+          </a>
         </li>
         <li className={styles.link}>
-          <img
-            src={getImageUrl("contact/linkedinIcon.png")}
-            alt="LinkedIn icon"
-          />
-          <a href="https://www.linkedin.com/in/jeffpodmayer/">
-            linkedin.com/jeffpodmayer
+          <a
+            className={styles.linkedInLogo}
+            href="https://www.linkedin.com/in/jeffpodmayer/"
+          >
+            <img
+              src="../../../assets/nav/linkedInLogo.png"
+              alt="LinkedIn icon"
+            />
           </a>
         </li>
       </ul>
