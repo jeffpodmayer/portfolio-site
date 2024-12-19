@@ -26,8 +26,9 @@
 
 .links {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   list-style: none;
   gap: 26px;
 }
@@ -44,6 +45,22 @@
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 1.5px;
+}
+
+.mailToLogo img {
+  width: 32px; /* Adjust logo size */
+  height: 32px; /* Ensure logos are square */
+}
+
+.githubLogo img {
+  width: 30px; /* Adjust logo size */
+  height: 30px; /* Ensure logos are square */
+  margin-left: 5px;
+}
+
+.linkedInLogo img {
+  width: 42px; /* Adjust logo size */
+  height: 42px; /* Ensure logos are square */
 }
 
 @media screen and (max-width: 830px) {
