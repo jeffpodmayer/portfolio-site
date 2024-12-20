@@ -2,7 +2,7 @@
   {
     "title": "hikerhunger",
     "imageSrc": "projects/hikerhunger.png",
-    "description": "Create backpacking recipes and plan hiking trips.",
+    "description": "Create backpacking recipes and plan hiking trip based on your foods total weight.",
     "skills": [
       "Java",
       "JavaScript",
