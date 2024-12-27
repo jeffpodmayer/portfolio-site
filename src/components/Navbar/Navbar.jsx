@@ -9,7 +9,7 @@ export const Navbar = () => {
     <nav className={styles.navbar}>
       <a className={styles.title} href="/"></a>
       <div className={styles.menu}>
-        <img
+        {/* <img
           className={styles.menuBtn}
           src={
             menuOpen
@@ -18,7 +18,7 @@ export const Navbar = () => {
           }
           alt="menu-button"
           onClick={() => setMenuOpen(!menuOpen)}
-        />
+        /> */}
         <ul
           className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
           onClick={() => setMenuOpen(false)}
@@ -57,7 +57,7 @@ export const Navbar = () => {
         <a
           href="mailto:jeff.podmayer@gmail.com"
           className={styles.contactBtn}
-          target="_blanl"
+          target="_blank"
         >
           {" "}
           Contact Me
