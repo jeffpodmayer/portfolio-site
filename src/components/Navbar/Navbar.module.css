@@ -5,11 +5,10 @@
   position: sticky;
   top: 0;
   justify-content: space-between;
-  align-items: center;
   padding: 1% 1%;
   z-index: 100;
   margin: 0 8%;
-  border-bottom: white dashed 2px;
+  border-bottom: white dashed 1px;
   background-color: var(--color-bg);
   box-sizing: border-box;
 }
@@ -23,7 +22,6 @@
 
 .menu {
   display: flex;
-  justify-content: flex-start; /* Align to the left */
   align-items: center; /* Align vertically */
   gap: 20px; /* Space between menu items */
   margin-left: 0;
@@ -33,15 +31,12 @@
   display: flex;
   gap: 47px;
   list-style: none;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .menuItems a {
   font-size: 25px;
   color: var(--color-text);
   text-decoration: none;
-  margin-bottom: 15px;
   transition: color 0.3s ease;
 }
 
