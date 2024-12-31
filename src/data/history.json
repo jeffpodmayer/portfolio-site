@@ -1,27 +1,49 @@
 [
   {
-    "role": "Student",
-    "organisation": "Coders Campus",
-    "startDate": "Nov, 2023",
+    "role": "Product Manager",
+    "organisation": "Pathloom",
+    "startDate": "Sept, 2024",
     "endDate": "Present",
     "experiences": [
-      "Learned to code through 9 months of rigorous full time course work",
-      "Mentored fellow students through pair programming at 4 meetings per week",
-      "Contributed to programs open source application through ticket completion, code reviews and mob programming sessions",
+      "Collaborated with an international web development agency to establish project timelines and led daily stand-up meetings, ensuring team alignment and timely deliverables",
+      "Provided direction and feedback through Figma and design team meetings on wireframes and high-fidelity designs for a mobile app, focusing on user needs to create an intuitive experience",
+      "Fostered strong relationships with stakeholders to gather insights for application growth, and collaborated with marketing teams to align branding strategies and ensure cohesive messaging across the app",
+      "Collected needed data through external APIs and organized data into database schema object for use in mobile application"
+    ],
+    "imageSrc": "history/pathloomIcon.png"
+  },
+  {
+    "role": "Full Stack Coding Bootcamp",
+    "organisation": "Coders Campus",
+    "startDate": "Nov, 2023",
+    "endDate": "Oct, 2024",
+    "experiences": [
+      "Learned Java, JavaScript, Spring, Hibernate and MySQL through 11 months of rigorous full-time coursework",
+      "Mentored fellow students through pair programming at 4 course meetings per week",
+      "Contributed to program's open-source application through ticket completion, code reviews and mob programming sessions",
       "Used Git/GitHub for version control of production, dev and other feature branches",
-      "Collaborated in a feedback-oriented environment for professional development and program improvement throughout a 7 month programming season serving over 200 participants"
+      "Collaborated in a feedback-oriented environment for professional development and program improvement throughout a 7-month programming season serving over 200 participants"
     ],
     "imageSrc": "history/codersCampusIcon.png"
   },
   {
-    "role": "Instructor & Program Director",
+    "role": "Program Director",
+    "organisation": "Outward Bound California",
+    "startDate": "Nov, 2021",
+    "endDate": "Mar, 2023",
+    "experiences": [
+      "Led a high-performing, cross-functional team, composed of 4 direct reports and 20 field staff members with areas of expertise ranging from program management to logistics to instruction",
+      "Collaborated in a feedback-oriented environment for professional development and program improvement throughout a 7-month programming season serving over 200 participants"
+    ],
+    "imageSrc": "history/obca.png"
+  },
+  {
+    "role": "Instructor & Course Director",
     "organisation": "Outward Bound California",
     "startDate": "May, 2014",
-    "endDate": "Mar, 2022",
+    "endDate": "Mar, 2020",
     "experiences": [
-      "Instructed and created curriculum for 1-4 week-long rock climbing and backpacking expeditions for ages 12 to adult with a focus on socio-emotional learning including self-awareness, self regulation, social responsibility and perseverance",
-      "Led a high-performing, cross-functional team, composed of four direct reports and twenty field staff members with areas of expertise ranging from program management to logistics to instruction",
-      "Collaborated in a feedback-oriented environment for professional development and program improvement throughout a 7 month programming season serving over 200 participants"
+      "Instructed and created curriculum for 1-4 week-long rock climbing and backpacking expeditions for ages 12 to adult with a focus on socio-emotional learning including self-awareness, self-regulation, social responsibility, and perseverance"
     ],
     "imageSrc": "history/obca.png"
   }
