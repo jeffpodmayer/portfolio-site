@@ -102,3 +102,10 @@
   transition: background-position 0.5s ease, transform 0.3s ease,
     box-shadow 0.3s ease;
 }
+
+@media screen and (max-width: 830px) {
+  .container {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
