@@ -20,7 +20,7 @@
 }
 
 .title {
-  position: relative;
+  /* position: relative; */
   font-size: 72px;
   font-weight: 900;
   font-family: var(--font-roboto);
@@ -48,23 +48,27 @@
   box-shadow: 3px 3px 3px 3px hsl(271, 70%, 60%, 0.5);
 }
 
-@keyframes floating {
-  0% {
-    transform: translate(0, 0px);
-  }
-
-  50% {
-    transform: translate(0, 10px);
-  }
-
-  100% {
-    transform: translate(0, 0px);
-  }
-}
-
-@media screen and (max-wdith: 830px) {
+@media screen and (max-width: 830px) {
   .container {
+    display: flex;
     flex-direction: column-reverse;
+  }
+
+  .heroImg {
+    width: 70%;
+  }
+
+  .title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .typingEffect {
+    font-size: 20px;
   }
 
   .content {

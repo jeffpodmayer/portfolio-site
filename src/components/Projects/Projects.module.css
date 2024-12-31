@@ -29,3 +29,21 @@
   gap: 25px;
   width: 80%;
 }
+
+@media screen and (max-width: 830px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 30px; /* Adjust font size as needed */
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+}
