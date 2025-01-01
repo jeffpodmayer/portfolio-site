@@ -13,7 +13,6 @@ const TimelineEntry = ({
   startDate,
   endDate,
   experiences,
-  icon: Icon,
 }) => {
   return (
     <TimelineItem>
@@ -25,9 +24,7 @@ const TimelineEntry = ({
       </TimelineOppositeContent>
 
       <TimelineSeparator>
-        <TimelineDot>
-          <Icon color={role === "Product Manager" ? "secondary" : "primary"} />
-        </TimelineDot>
+        <TimelineDot></TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
 
@@ -35,12 +32,16 @@ const TimelineEntry = ({
         <Typography variant="h5" component="span">
           {startDate} to {endDate}
         </Typography>
-        <Typography marginBottom={"35px"}>
-          {experiences.map((experience, index) => (
-            <Typography key={index} marginBottom={"15px"}>
-              {experience}
-            </Typography>
-          ))}
+        <Typography component="div" style={{ marginBottom: "35px" }}>
+          <ul style={{ listStyle: "none", marginBottom: "10px" }}>
+            {experiences.map((experience, index) => (
+              <li key={index} style={{ marginBottom: "15px" }}>
+                <Typography component="span" style={{ marginBottom: "15px" }}>
+                  {experience}
+                </Typography>
+              </li>
+            ))}
+          </ul>
         </Typography>
       </TimelineContent>
     </TimelineItem>
