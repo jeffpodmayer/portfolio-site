@@ -6,7 +6,7 @@ import TimelineEntry from "./TimelineEntry";
 
 const LeftAlignedTimeline = () => {
   return (
-    <Timeline sx={{ marginLeft: "-350px" }}>
+    <Timeline>
       {history.map((entry, index) => (
         <TimelineEntry
           key={index}

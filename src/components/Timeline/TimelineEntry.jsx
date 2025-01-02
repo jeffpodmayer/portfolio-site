@@ -6,6 +6,7 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import Typography from "@mui/material/Typography";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import styles from "./TimelineEntry.module.css";
 
 const TimelineEntry = ({
   role,
@@ -15,28 +16,41 @@ const TimelineEntry = ({
   experiences,
 }) => {
   return (
-    <TimelineItem>
-      <TimelineOppositeContent color="white">
-        <Typography variant="h5" component="span">
+    <TimelineItem className={styles.timelineItem}>
+      <TimelineOppositeContent className={styles.timelineOppositeContent}>
+        <Typography
+          variant="h5"
+          component="span"
+          className={styles.timelineRole}
+        >
           {role}
         </Typography>
-        <Typography>{organisation}</Typography>
+        <Typography className={styles.timelineOrganisation}>
+          {organisation}
+        </Typography>
       </TimelineOppositeContent>
 
-      <TimelineSeparator>
+      <TimelineSeparator className={styles.timelineSeparator}>
         <TimelineDot></TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
 
-      <TimelineContent>
-        <Typography variant="h5" component="span">
+      <TimelineContent className={styles.timelineContent}>
+        <Typography
+          variant="h5"
+          component="span"
+          className={styles.timelineDate}
+        >
           {startDate} to {endDate}
         </Typography>
-        <Typography component="div" style={{ marginBottom: "35px" }}>
-          <ul style={{ listStyle: "none", marginBottom: "10px" }}>
+        <Typography component="div" className={styles.timelineExperiences}>
+          <ul className={styles.timelineList}>
             {experiences.map((experience, index) => (
-              <li key={index} style={{ marginBottom: "15px" }}>
-                <Typography component="span" style={{ marginBottom: "15px" }}>
+              <li key={index} className={styles.timelineListItem}>
+                <Typography
+                  component="span"
+                  className={styles.timelineExperience}
+                >
                   {experience}
                 </Typography>
               </li>
