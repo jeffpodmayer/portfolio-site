@@ -1,0 +1,11 @@
+.timelineContainer {
+  margin-left: -300px; /* Default spacing to position timeline to the left */
+}
+
+@media (max-width: 830px) {
+  .timelineContainer {
+    margin-left: 0; /* Reset spacing on smaller screens */
+    padding-right: 0; /* Remove additional padding */
+    text-align: center; /* Optional: Center content */
+  }
+}
