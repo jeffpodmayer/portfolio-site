@@ -1,0 +1,71 @@
+/* TimelineEntry.module.css */
+.timelineOppositeContent {
+  color: white;
+}
+
+.timelineRole {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.timelineOrganisation {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.timelineDate {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.timelineExperiences {
+  margin-bottom: 35px;
+}
+
+.timelineList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.timelineListItem {
+  margin-bottom: 15px;
+}
+
+.timelineExperience {
+  font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 830px) {
+  .timelineOppositeContent {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .timelineRole {
+    font-size: 1.2rem;
+  }
+
+  .timelineOrganisation {
+    font-size: 1rem;
+  }
+
+  .timelineDate {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .timelineExperiences {
+    margin-bottom: 25px;
+  }
+
+  .timelineListItem {
+    margin-bottom: 10px;
+  }
+
+  .timelineExperience {
+    font-size: 0.9rem;
+  }
+}
