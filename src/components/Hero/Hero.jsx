@@ -1,5 +1,4 @@
 import React from "react";
-
 import { getImageUrl } from "../../utils";
 import styles from "./Hero.module.css";
 import TypingEffect from "../TypingEffect/TypingEffect";
@@ -26,7 +25,7 @@ export const Hero = () => {
         </div>
       </div>
       <img
-        src={getImageUrl("hero/heroImage.png")}
+        src="/assets/hero/heroImage.png"
         alt="hero"
         className={styles.heroImg}
       />

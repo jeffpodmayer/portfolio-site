@@ -1,7 +1,7 @@
 [
   {
     "title": "hikerhunger",
-    "imageSrc": "projects/hikerhunger.png",
+    "imageSrc": "/assets/projects/hikerhunger.png",
     "description": "Create backpacking recipes and plan hiking trip based on your foods total weight.",
     "skills": [
       "Java",
@@ -16,7 +16,7 @@
   },
   {
     "title": "Skull King Scorekeeper",
-    "imageSrc": "projects/skscorekeeper.png",
+    "imageSrc": "/assets/projects/skscorekeeper.png",
     "description": "Single-page application for scoring the Skull King card game.",
     "skills": [
       "React",

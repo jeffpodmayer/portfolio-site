@@ -17,10 +17,7 @@ export const Contact = () => {
               className={styles.mailToLogo}
               href="mailto:jeff.podmayer@gmail.com"
             >
-              <img
-                src={getImageUrl("contact/emailIcon.png")}
-                alt="email icon"
-              />
+              <img src="/assets/contact/emailIcon.png" alt="email icon" />
             </a>
           </li>
           <li className={styles.link}>

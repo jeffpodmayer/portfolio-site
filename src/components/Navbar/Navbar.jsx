@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 
-import { getImageUrl } from "../../utils";
-
 export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
@@ -25,16 +23,19 @@ export const Navbar = () => {
           <img
             className={styles.logo}
             src="/assets/nav/githubLogo.png"
-            alt="Git Hub Logo"
+            alt="GitHub Logo"
           />
         </a>
         <a
           href="https://www.linkedin.com/in/jeffpodmayer/"
           className={styles.linkedInLogo}
-          alt="LinkedIn Logo"
           target="_blank"
         >
-          <img className={styles.logo} src="/assets/nav/linkedInLogo.png" />
+          <img
+            className={styles.logo}
+            src="/assets/nav/linkedInLogo.png"
+            alt="LinkedIn Logo"
+          />
         </a>
         <a
           href="mailto:jeff.podmayer@gmail.com"
