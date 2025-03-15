@@ -2,7 +2,7 @@
 
 .container {
   margin-top: 35px;
-  width: 40%;
+  width: 30%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -27,6 +27,11 @@
   transition: opacity 0.3s ease;
   border-radius: 10px;
   margin: 10px 10px 10px 10px;
+}
+
+.hutImage {
+  object-fit: contain;
+  object-position: center;
 }
 
 .details {
@@ -101,6 +106,12 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
   transition: background-position 0.5s ease, transform 0.3s ease,
     box-shadow 0.3s ease;
+}
+
+.disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 830px) {

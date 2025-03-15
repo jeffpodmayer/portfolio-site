@@ -29,5 +29,20 @@
     ],
     "demo": "https://skscorekeeper.jeffpodmayer.com/",
     "source": "https://github.com/jeffpodmayer/skull-king-scoreboard"
+  },
+  {
+    "title": "Rendezvous Reminder",
+    "imageSrc": "/assets/projects/hutreminder.png",
+    "description": "Mobile app allowing users to create reminders and recieve notifications for cancellations at a backcountry hut system.",
+    "skills": [
+      "React Native",
+      "TypeScript",
+      "Python",
+      "Flask",
+      "SQLite",
+      "Expo"
+    ],
+    "demo": "",
+    "source": "https://github.com/jeffpodmayer/hut-reminder"
   }
 ]
