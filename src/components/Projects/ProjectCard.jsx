@@ -1,6 +1,5 @@
-import React from "react";
-import { getImageUrl } from "../../utils";
 import styles from "./ProjectCard.module.css";
+import PropTypes from "prop-types";
 
 export const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, source },
@@ -8,7 +7,13 @@ export const ProjectCard = ({
   return (
     <div className={styles.container}>
       <h3 className={styles.title}>{title}</h3>
-      <img className={styles.image} src={imageSrc} alt={`Image of ${title}`} />
+      <img
+        className={`${styles.image} ${
+          title === "Rendezvous Reminder" ? styles.hutImage : ""
+        }`}
+        src={imageSrc}
+        alt={title}
+      />
       <div className={styles.details}>
         <ul className={styles.skills}>
           {skills.map((skill, id) => {
@@ -21,9 +26,13 @@ export const ProjectCard = ({
         </ul>
         <p className={styles.description}>{description}</p>
         <div className={styles.links}>
-          <a className={styles.link} href={demo} target="_blank">
+          <a
+            className={`${styles.link} ${!demo ? styles.disabled : ""}`}
+            href={demo}
+            target="_blank"
+          >
             {" "}
-            Live Site
+            {demo ? "Live Site" : "Not Live Yet!"}
           </a>
           <a className={styles.link} href={source} target="_blank">
             {" "}
@@ -33,4 +42,15 @@ export const ProjectCard = ({
       </div>
     </div>
   );
+};
+
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    imageSrc: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    skills: PropTypes.arrayOf(PropTypes.string).isRequired,
+    demo: PropTypes.string.isRequired,
+    source: PropTypes.string.isRequired,
+  }).isRequired,
 };

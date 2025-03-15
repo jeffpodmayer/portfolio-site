@@ -1,9 +1,22 @@
 [
   {
+    "role": "Software Engineering Intern",
+    "organisation": "Wayhome Services Co.",
+    "startDate": "Feb. 2025",
+    "endDate": "Present",
+    "experiences": [
+      "Engineered new features and resolved bugs using Ruby on Rails, Docker, Twitter Bootstrap, SQL, and HTML/CSS",
+      "Integrated a third-party API to track user journeys, improving the app's turnover rate",
+      "Collaborated with UX/UI designers, marketers, and the founder to ensure timely project completion",
+      "Utilized Git/GitHub for version control, pull requests, code reviews, and automation through GitHub Actions"
+    ],
+    "imageSrc": ""
+  },
+  {
     "role": "Product Manager",
     "organisation": "Pathloom",
     "startDate": "Sept. 2024",
-    "endDate": "Present",
+    "endDate": "Feb. 2025",
     "experiences": [
       "Collaborated with an international web development agency to establish project timelines and led daily stand-up meetings, ensuring team alignment and timely deliverables",
       "Provided direction and feedback through Figma and design team meetings on wireframes and high-fidelity designs for a mobile app, focusing on user needs to create an intuitive experience",
